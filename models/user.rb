@@ -7,6 +7,6 @@ class User
 
 #  def name
 #    "#{@firstname} #{@lastname}"
-  end
+  #end
 
-#end
+end

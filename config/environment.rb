@@ -1,12 +1,12 @@
 # Load all models
-Dir["./models/*.rb"].each {|model| require model}
+Dir['./models/*.rb'].each {|model| require model}
 
 # Used during local development (on your own machine)
 configure :development do
 
-  puts "*******************"
-  puts "* DEVELOPMENT ENV *"
-  puts "*******************"
+  puts '*******************'
+  puts '* DEVELOPMENT ENV *'
+  puts '*******************'
 
   # Enable logging to console
   DataMapper::Logger.new($stdout, :debug)
@@ -22,9 +22,9 @@ end
 # Used during production (on Heroku), when your application is 'live'
 configure :production do
 
-  puts "******************"
-  puts "* PRODUCTION ENV *"
-  puts "******************"
+  puts '******************'
+  puts '* PRODUCTION ENV *'
+  puts '******************'
 
   # Use Postgresql
   DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/mydb')

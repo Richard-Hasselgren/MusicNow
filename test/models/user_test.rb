@@ -3,7 +3,7 @@ require_relative 'models_helper'
 describe User do
 
   before do
-    @user = User.new('Reginald', 'Fartswaith')
+    @user = User.new('Regi', 'Fartswaith')
   end
 
   describe 'name convenience method' do
